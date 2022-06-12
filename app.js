@@ -58,7 +58,7 @@ if(process.env.NODE_ENV=="production"){
 }
 
 app.get("/",()=>{
-  app.send("Hello world")
+  app.send("Hello world heyy")
 })
 //Starting a server
 app.listen(port, () => {
