@@ -56,6 +56,10 @@ if(process.env.NODE_ENV=="production"){
     response.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
   });
 }
+
+app.get("/",()=>{
+  app.send("Hello world")
+})
 //Starting a server
 app.listen(port, () => {
   console.log(`app is running at ${port}`);
